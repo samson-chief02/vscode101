@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe list</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>Favorite recipes</h1>
+    <form id="recipe-form">
+      <label for="recipe-name">Recipe name</label>
+      <input id="recipe-name" name="recipe-name" required>
+
+      <label for="recipe-description">Description</label>
+      <textarea id="recipe-description" name="recipe-description" required></textarea>
+
+      <button type="submit">Add recipe</button>
+    </form>
+    <ul id="recipe-list" aria-live="polite"></ul>
+  </main>
+</body>
+</html>
